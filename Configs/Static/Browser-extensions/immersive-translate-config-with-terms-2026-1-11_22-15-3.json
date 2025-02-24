@@ -1,0 +1,102 @@
+{
+  "updatedAt": "2025-12-12T10:15:52.178Z",
+  "isChangedAlwaysTranslatedUrls": false,
+  "targetLanguage": "zh-CN",
+  "localUpdatedAt": "2025-12-12T10:15:52.178Z",
+  "translationServiceChangedbyUserAt": "2025-12-12T10:15:52.174Z",
+  "translationService": "google",
+  "userTranslationServices": {
+    "translationService": "google-free",
+    "inputTranslationService": "google-free",
+    "subtitleTranslateService": "deepseek-I33ILU4J"
+  },
+  "customAiAssistants": [],
+  "aiAssistantIds": [
+    "paraphrase",
+    "paragraph-summarizer-expert",
+    "plain-english",
+    "twitter",
+    "tech",
+    "reddit",
+    "paper",
+    "news",
+    "music",
+    "medical",
+    "legal",
+    "github",
+    "game",
+    "ecommerce",
+    "financial",
+    "fiction",
+    "ebook",
+    "design",
+    "bilingual-mix",
+    "web3",
+    "ao3"
+  ],
+  "translationServiceExpanded": {
+    "free": false
+  },
+  "translationServices": {
+    "deepseek-I33ILU4J": {
+      "type": "deepseek",
+      "extends": "deepseek",
+      "group": "custom",
+      "name": "My-DeepSeek",
+      "APIKEY": "sk-f4e3d9c5041d4ee58892ecb3b1783978",
+      "visible": true
+    }
+  },
+  "inputTargetLanguage": "en",
+  "inputTranslationService": "google",
+  "generalRule": {
+    "mouseHoverHoldKey": "Ctrl",
+    "subtitleRule.add": {
+      "youtubeAutoEnableSubtitle": true,
+      "autoEnableSubtitle": true,
+      "preTranslation": true,
+      "translationFontFamily": "Source Han Sans CN",
+      "sourceFontFamily": "Arial",
+      "translationTextColor": "#FFFF00",
+      "translationFontSize": "120",
+      "translationPosition": "top",
+      "backgroundColor": "#080808",
+      "textShadowType": "none",
+      "sourceTextColor": "#FF00FF",
+      "backgroundOpacity": "50",
+      "showQuickButton": false
+    }
+  },
+  "pcFloatBallMainBtnTooltipShownCount": 9,
+  "enableInputTranslation": true,
+  "isShowInputTranslationConsent": false,
+  "subtitleTranslateService": "deepseek",
+  "rewardCenterOpenTime": "1761204295518",
+  "terms": {
+    "version": 1,
+    "exportedAt": "2026-01-11T14:15:03.453Z",
+    "data": [
+      {
+        "id": "default",
+        "name": "Default Terms",
+        "author": "self",
+        "description": "Default common terms with common terms",
+        "matches": [
+          "*"
+        ],
+        "glossaries": [
+          {
+            "k": "LLM",
+            "v": ""
+          },
+          {
+            "k": "LLMs",
+            "v": ""
+          }
+        ],
+        "order": 0,
+        "active": true
+      }
+    ]
+  }
+}

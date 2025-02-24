@@ -1,0 +1,61 @@
+{
+  "type": ["copy", "sed_insert", "sed_change"],
+  "copy": {
+    "field": ["kitty", "zathura", "waybar"],
+    "kitty": [
+      "~/.config/kitty/themes",
+      "~/.config/kitty/themes/base.conf",
+      [
+        ["Catppuccin/latte.conf", "Catppuccin/mocha.conf"],
+        ["Tokyo_Night/day.conf", "Tokyo_Night/moon.conf"],
+        ["Adwaite/light-theme.auto.conf", "Adwaite/dark-theme.auto.conf"]
+      ]
+    ],
+    "zathura": [
+      "~/.config/zathura/themes",
+      "~/.config/zathura/themes/current.conf",
+      [["Catppuccin/latte", "Catppuccin/mocha"]]
+    ],
+    "waybar": [
+      "~/.config/waybar/style",
+      "~/.config/waybar/style/current.css",
+      [["catppuccin-themes/latte.css", "catppuccin-themes/mocha.css"]]
+    ]
+  },
+  "sed_insert": {
+    "field": ["tofi", "dunst", "hyprlock"],
+    "tofi": [
+      "~/.config/tofi/theme",
+      "~/.config/tofi/config",
+      [["Catppuccin/latte", "Catppuccin/mocha"]]
+    ],
+    "dunst": [
+      "~/.config/dunst/themes",
+      "~/.config/dunst/dunstrc",
+      [["Catppuccin/latte.conf", "Catppuccin/mocha.conf"]]
+    ],
+    "hyprlock": [
+      "~/.config/hypr/style",
+      "~/.config/hypr/hyprlock.conf",
+      [["Catppuccin/light", "Catppuccin/night"]]
+    ]
+  },
+  "sed_change": {
+    "field": ["fcitx5", "hypr", "gtk"],
+    "fcitx5": [
+      "~/.config/fcitx5/conf/classicui.conf",
+      ["Theme=ayaya-light", "Theme=ayaya-dark"]
+    ],
+    "hypr": [
+      "~/.config/hypr/Config/config.conf",
+      [
+        "\t\tcol.active_border = rgba(194c5dff) rgba(002d3cff) 45deg",
+        "\t\tcol.active_border = rgba(e6f1e8ff) rgba(a7cdb0ff) 45deg"
+      ]
+    ],
+    "gtk": [
+      "~/.config/hypr/Config/basic.conf",
+      ["env = GTK_THEME, Adwaita", "env = GTK_THEME, Adwaita-dark"]
+    ]
+  }
+}

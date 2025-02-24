@@ -1,0 +1,106 @@
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  font-weight: bold;
+  min-height: 0;
+  font-size: 17px;
+  font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+}
+
+@import "../waybar/style/current.css";
+
+@define-color main_bg rgba(0, 0, 0, 0);
+@define-color modules_bg @base;
+@define-color tooltip_bg @base;
+@define-color text_color @text;
+@define-color tooltip_text_color @text;
+
+window#waybar {
+  background-color: @main_bg;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+tooltip {
+  background: @tooltip_bg;
+  opacity: 0.8;
+  border-style: solid;
+  border-color: @sapphire;
+}
+
+tooltip label {
+  color: @tooltip_text_color;
+}
+
+#workspaces button {
+  font-size: 1rem;
+  color: @sky;
+  background-color: @base;
+  padding: 2px;
+  margin: 4px;
+  border-radius: 50px;
+  border: 0;
+}
+
+#workspaces button.active {
+  color: @green;
+}
+
+#workspaces button.focused {
+  color: @pink;
+  background: @main_bg;
+  border-radius: 15px;
+}
+
+#workspaces button:hover {
+  background: @pink;
+  color: @base;
+  border-color: @main_bg;
+}
+
+#cpu,
+#memory,
+#battery,
+#clock,
+#backlight,
+#pulseaudio,
+#network.speed,
+#temperature {
+  background-color: @modules_bg;
+  color: @text_color;
+  padding: 2px 6px;
+}
+
+#cpu {
+  border-radius: 20px 0px 0px 20px;
+}
+#temperature {
+  border-radius: 0px 20px 20px 0px;
+  margin-right: 15px;
+}
+#clock {
+  border-radius: 20px 20px 20px 20px;
+  margin-right: 15px;
+}
+
+#battery {
+  border-radius: 0 20px 20px 0;
+}
+#network.speed {
+  border-radius: 20px 0 0 20px;
+}
+
+@keyframes blink {
+  to {
+    background-color: @sapphire;
+    color: @rosewater;
+  }
+}
+
+#battery.critical:not(.charging) {
+  color: @blue;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}

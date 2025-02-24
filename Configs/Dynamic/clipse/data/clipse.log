@@ -1,0 +1,3 @@
+2025/12/10 04:04:24 logger.go:19: ERROR: failed to decode image file for preview | open /home/luky/.config/clipse/tmp_files/218923-738775465.png: no such file or directory
+2025/12/10 04:05:32 logger.go:19: ERROR: failed to decode image file for preview | open /home/luky/.config/clipse/tmp_files/218923-738775465.png: no such file or directory
+2025/12/10 04:06:06 logger.go:19: ERROR: failed to decode image file for preview | open /home/luky/.config/clipse/tmp_files/218923-738775465.png: no such file or directory

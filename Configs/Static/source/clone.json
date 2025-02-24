@@ -1,0 +1,16 @@
+{
+	"clone_url_source": [
+		"git@github.com:highdf/Code.git",
+		"git@github.com:highdf/nvim-configure.git",
+		"git@github.com:highdf/Picture.git",
+		"git@github.com:highdf/NoteBook.git",
+		"git@github.com:highdf/Environments.git"
+	],
+	"clone_path_source": [
+        "~/Code",
+        "~/.config/nvim",
+        "~/Pictures/",
+        "~/NoteBook/",
+		"~/Environments/"
+	]
+}

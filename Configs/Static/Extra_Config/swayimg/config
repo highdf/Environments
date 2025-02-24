@@ -1,0 +1,35 @@
+[font]
+name = "Noto Sans CJK SC" 
+size = 15
+color = #ffffffff
+shadow = #000000c0
+background = #00000060
+
+[keys.viewer]
+Shift+f = first_file
+Shift+e = last_file
+f = fullscreen
+p = prev_file
+n = next_file
+h = step_left 10
+l = step_right 10
+k = step_up 10
+j = step_down 10
+
+a = animation
+s = slideshow
+Space = mode
+
+bracketleft = zoom +10
+bracketright = zoom -10
+Comma = rotate_left
+Period = rotate_right
+r = zoom fit
+Shift+r = reload
+q = exit
+
+[keys.gallery]
+p = prev_file
+n = next_file
+Space = mode
+q = exit

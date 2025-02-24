@@ -1,0 +1,16 @@
+# BASIC
+width = 800
+height = 500
+border-width = 1
+corner-radius = 12
+font = "/usr/share/fonts/TTF/JetBrainsMonoNerdFont-Bold.ttf"
+font-size = 18
+prompt-text = "Apps > "
+terminal = kitty
+
+# THEME
+text-color = #cdd6f4
+prompt-color = #f38ba8
+selection-color = #f9e2af
+background-color = #1e1e2e
+border-color = #000000

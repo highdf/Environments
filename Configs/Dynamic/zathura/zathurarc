@@ -1,0 +1,3 @@
+include themes/current.conf
+include config/opts.conf
+include config/maps.conf
