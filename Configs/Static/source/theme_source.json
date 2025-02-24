@@ -1,0 +1,53 @@
+{
+	"item": [
+		"kitty",
+		"dunst",
+		"waybar",
+		"tofi",
+		"gtk",
+		"fcitx5"
+	],
+	"kitty": [
+		"~/.config/kitty/themes",
+		"~/.config/kitty/themes/base.conf",
+		[
+			["Catppuccin/latte.conf", "Catppuccin/mocha.conf"],
+			["Tokyo_Night/day.conf", "Tokyo_Night/moon.conf"]
+		]
+	],
+	"tofi": [
+		"~/.config/tofi/theme",
+		"~/.config/tofi/config",
+		[
+            ["Catppuccin/latte", "Catppuccin/mocha"]
+		]
+	],
+	"dunst": [
+		"~/.config/dunst/themes",
+		"~/.config/dunst/dunstrc",
+		[
+            ["Catppuccin/latte.conf", "Catppuccin/mocha.conf"]
+		]
+	],
+	"waybar": [
+		"~/.config/waybar/style",
+		"~/.config/waybar/style/current.css",
+		[
+			["catppuccin-themes/latte.css", "catppuccin-themes/mocha.css"]
+		]
+	],
+	"fcitx5": [
+		"~/.config/fcitx5/conf/classicui.conf",
+		[
+			"Theme=ayaya-light",
+			"Theme=ayaya-dark"
+		]
+	],
+	"gtk": [
+		"~/.config/hypr/Config/basic.conf",
+		[
+			"env = GTK_THEME, Adwaita",
+			"env = GTK_THEME, Adwaita-dark"
+		]
+	]
+}

@@ -1,0 +1,118 @@
+* {
+	font-family: "JetBrainsMono Nerd Font";
+	font-weight: bold;
+	min-height: 0;
+	font-size: 105%;
+	font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+}
+
+@import "../waybar/style/current.css";
+
+@define-color main_bg rgba(0, 0, 0, 0);
+@define-color modules_bg @base;
+@define-color tooltip_bg @crust;
+@define-color text_color @text;
+@define-color tooltip_text_color @subtext0;
+
+window#waybar {
+	background-color: @main_bg;
+	border-radius: 15px;
+	opacity: 1;
+}
+
+tooltip {
+  background: @tooltip_bg;
+  opacity: 1;
+  border-radius: 15px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: @sapphire;
+}
+
+tooltip label {
+  color: @tooltip_text_color;
+}
+
+#workspaces button {
+	color: @text_color;
+	background-color: transparent;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-right: 6px;
+	padding-left: 6px;
+	margin-right: 10px;
+}
+
+#workspaces button.active {
+  color: @teal;
+}
+
+#workspaces button.focused {
+  color: @rosewater;
+  background: @main_bg;
+  border-radius: 15px;
+}
+
+#workspaces button.urgent {
+  color: #11111b;
+  background: transparent;
+  border-radius: 15px;
+}
+
+#workspaces button:hover {
+  background: transparent;
+  color: @flamingo;
+  border-radius: 10px;
+  border-color: @sapphire;
+}
+
+#cpu,
+#memory,
+#battery,
+#clock,
+#backlight,
+#pulseaudio,
+#network.speed,
+#temperature {
+	background-color: @modules_bg;
+	color: @text_color;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#cpu {
+	border-radius: 20px 0px 0px 20px;
+}
+#temperature {
+	border-radius: 0px 20px 20px 0px;
+	margin-right: 15px
+}
+#clock {
+	border-radius: 20px 20px 20px 20px;
+	margin-right: 15px
+}
+
+#battery {
+	border-radius: 0 20px 20px 0;
+}
+#network.speed {
+	border-radius: 20px 0 0 20px;
+}
+
+@keyframes blink {
+  to {
+    background-color: @sapphire;
+    color: @base;
+  }
+}
+
+#battery.critical:not(.charging) {
+  color: #f53c3c;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}

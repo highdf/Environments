@@ -1,0 +1,28 @@
+{
+	"include": [
+		"$HOME/.config/waybar/Mudules/core",
+	],
+
+	"layer": "top",
+	"position": "top",
+	"height": 40,
+	"margin-left": 15,
+	"margin-right": 15,
+	"margin-top": 5,
+
+	"modules-left": [
+		"hyprland/workspaces",
+	],
+	"modules-center": [
+		"clock",
+	],
+	"modules-right": [
+		"cpu",
+		"memory",
+		"temperature",
+		"network#speed",
+		"backlight",
+		"pulseaudio",
+		"battery"
+	]	
+}

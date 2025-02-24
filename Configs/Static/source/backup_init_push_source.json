@@ -1,0 +1,39 @@
+{
+	"backup_source": [
+		"~/.zshrc",
+		"~/.tmux.conf",
+		"~/.gitconfig",
+		"~/.config/kitty",
+		"~/.config/tofi",
+		"~/.config/fcitx5",
+		"~/.config/yazi",
+		"~/.config/hypr",
+		"~/.config/dunst",
+		"~/.config/waybar",
+		"~/.config/imv",
+		"~/.config/mpv",
+		"~/.config/swayimg"
+	],
+	"push_source": {
+		"Code": "~/Code",
+		"Environments": "~/Environments",
+		"Pictures": "~/Pictures",
+		"NoteBook": "~/NoteBook",
+		"nvim": "~/.config/nvim"
+	},
+	"init_source": {
+		".zshrc": "~/.zshrc",
+		".tmux.conf": "~/.tmux.conf",
+		".gitconfig": "~/.gitconfig",
+		"kitty": "~/.config/kitty",
+		"tofi": "~/.config/tofi",
+		"fcitx5": "~/.config/fcitx5",
+		"yazi": "~/.config/yazi",
+		"hypr": "~/.config/hypr",
+		"dunst": "~/.config/dunst",
+		"waybar": "~/,config/waybar",
+		"imv": "~/.config/imv",
+		"mpv": "~/.config/mpv",
+		"swayimg": "~/.config/swayimg"
+	}
+}
